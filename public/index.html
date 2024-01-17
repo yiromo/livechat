@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Live Chat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="app">
+    <div class="screen join-screen active">
+        <div class="form">
+            <img src="logo.png" alt="Logo">
+            <h2>Join Live Chatroom</h2>
+            <div class="form-input">
+                <label>
+                    <i class="fa-regular fa-user"></i> Username</label>
+                <input type="text" id="username">
+            </div>
+            <div class="form-input">
+                <button id="join-user">Join</button>
+            </div>
+        </div>
+    </div>
+    <div class="screen chat-screen">
+        <div class="header">
+            <div class="logo">
+                <i class="fa-regular fa-message"></i> Chatroom #3000</div>
+            <button id="exit-chat">
+                <i class="fa-solid fa-right-from-bracket"></i> Exit</button>
+        </div>
+        <div class="messages">
+        </div>
+        <div class="typebox">
+            <input type="text" id="message-input">
+            <button id="send-message">
+                <i class="fa-regular fa-paper-plane"></i> Send</button>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/2d3632a15c.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="socket.io/socket.io.js"></script>
+<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
